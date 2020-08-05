@@ -12,8 +12,20 @@ repositories {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.5.2'
+    testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.5.2'
 }
 
+/*
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
+}*/
+
+compileJava {
+    options.encoding = "UTF-8"
+}
+
+test {
+    useJUnitPlatform()
 }
