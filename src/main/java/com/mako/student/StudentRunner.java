@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class StudentRunner {
     public static void main(String[] args) {
 //        userInput();
-//        com.mako.kotlin.Student.getPass();
 
         Student.pass = 50;
         Student stu = new Student("Mako", 88, 100);

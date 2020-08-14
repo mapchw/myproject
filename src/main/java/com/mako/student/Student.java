@@ -13,7 +13,7 @@ public class Student {
         this.math = math;
     }
 
-    int highest() {
+    public int highest() {
 //        int max = (english > math) ? english : math; //三元運算式
         //if else 敘述式
         /*if (english > math) {
